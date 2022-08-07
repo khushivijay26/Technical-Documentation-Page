@@ -12,7 +12,7 @@ body {
 
 #nav-header {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #navbar-links-container {
@@ -90,26 +90,25 @@ code {
     font-family: monospace;
 }
 
-@media screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
     body {
         font-family: "Open Sans", Arial, sans-serif;
     }
     #grid-container {
         grid-template-rows: unset;
-        grid-template-columns: 18rem auto;
+        grid-template-columns: 15rem auto;
     }
     main {
         height: 100vh;
-        overflow: auto;
     }
     nav {
         border-right: 3px solid #99A1A1;
+        height: 10000px;
     }
     #navbar-links-container {
         border: unset;
         border-left-width: unset;
         border-right-width: unset;
-        min-height: 88vh;
-        overflow: auto;
+        overflow: visible;
     }
 }
